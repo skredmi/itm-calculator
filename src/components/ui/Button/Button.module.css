@@ -12,25 +12,19 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
-  /*   background-color: linear-gradient(117deg, rgb(15, 15, 15), rgb(34, 34, 34));
-  transition: background-color 0.4s, transform 0.4s linear; */
-}
-
-/* .button:hover {
-  background-color: var(--main-button-background-color-hover);
-  transform: scale(1.05);
-} */
-
-.colorMain {
-  background-color: var(--main-button-background-color);
-  border: 1px solid var(--main-button-background-color);
 }
 
 .colorSecondary {
-  background-color: var(--secondary-button-background-color);
-  border: 1px solid var(--secondary-button-background-color);
+  background-image: linear-gradient(
+    117deg,
+    var(--secondary-button-background-color-start),
+    var(--secondary-button-background-color-end)
+  );
+  border: 1px solid var(--secondary-button-background-color-start);
 }
 
 .fullWidth {
-  width: 200px;
+  width: 400px;
+  height: 45px;
+  font-size: 18px;
 }

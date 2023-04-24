@@ -16,7 +16,6 @@ export const Button: FC<IButtonProps> = ({
   className,
 }) => {
   const blockClass = classnames(styles.button, className, {
-    [styles.colorMain]: theme === "main",
     [styles.colorSecondary]: theme === "secondary",
     [styles.fullWidth]: isFullWidth,
   });

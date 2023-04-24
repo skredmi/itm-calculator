@@ -8,6 +8,7 @@ interface ICardWithInputProps {
   name: string;
   unit: string;
   placeholder: string;
+  error?: boolean;
 }
 
 export const CardWithInput: FC<ICardWithInputProps> = ({
@@ -16,10 +17,11 @@ export const CardWithInput: FC<ICardWithInputProps> = ({
   name,
   unit,
   placeholder,
+  error,
 }) => {
   return (
-    <Card index={index} title={title}>
-      <Input type="number" name={name} unit={unit} placeholder={placeholder} />
+    <Card index={index} title={title} error={error}>
+      <Input type="number" name={name} unit={unit} placeholder={placeholder} error={error} />
     </Card>
   );
 };

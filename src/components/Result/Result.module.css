@@ -1,0 +1,61 @@
+.title {
+  color: var(--main-text-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.chart {
+  overflow: auto;
+  padding-bottom: 50px;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.line {
+  width: 100%;
+  padding-top: 120px;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.sticker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: fit-content;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 10px;
+  color: var(--button-text-color);
+  background-color: var(--low-weight-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.sticker span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: rotate(45deg) translateX(-50%);
+  transition: var(--transition-3s);
+}
+
+.stickerTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.stickerInfo {
+  font-size: 14px;
+  font-weight: 500;
+}

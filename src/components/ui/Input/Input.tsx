@@ -1,4 +1,5 @@
 import { ChangeEvent, FC } from "react";
+import classnames from "classnames";
 import styles from "./Input.module.css";
 
 interface IInputProps {
@@ -8,6 +9,7 @@ interface IInputProps {
   value?: number;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   placeholder: string;
+  error?: boolean;
 }
 
 export const Input: FC<IInputProps> = ({
@@ -17,7 +19,12 @@ export const Input: FC<IInputProps> = ({
   value,
   onChange,
   placeholder,
+  error,
 }) => {
+  const blockClass = classnames(styles.input, {
+    [styles.error]: error,
+  });
+
   return (
     <div className={styles.container}>
       <input
@@ -26,7 +33,7 @@ export const Input: FC<IInputProps> = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className={styles.input}
+        className={blockClass}
       />
       <span className={styles.span}>{unit}</span>
     </div>

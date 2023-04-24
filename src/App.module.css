@@ -1,7 +1,17 @@
-.container {
+.calculatorContainer {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 1200px;
   padding: 20px;
+}
+
+.resultContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  border-top: 2px solid var(--border-card-color);
 }
