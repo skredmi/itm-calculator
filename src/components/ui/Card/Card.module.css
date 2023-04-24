@@ -1,0 +1,36 @@
+.card {
+  min-height: 236px;
+  padding: 20px;
+  color: var(--main-text-color);
+  border: 1px solid var(--border-card-color);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.error {
+  border: 1px solid var(--error-color);
+}
+
+.index {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  margin-top: -35px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  line-height: 31px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--main-text-color);
+  color: var(--black-color);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 12px 0;
+}
