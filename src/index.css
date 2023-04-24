@@ -11,8 +11,10 @@
   --main-text-color: #a1c2d3;
   --button-text-color: #ffffff;
   --secondary-text-color: #81d7ff;
-  --main-button-background-color: #03a3ed;
-  --main-button-background-color-hover: #0382bd;
+  --main-button-background-color-start: #0f0f0f;
+  --main-button-background-color-end: #222222;
+  --main-button-background-color-active-start: #03a3ed;
+  --main-button-background-color-active-end: #0382bd;
   --secondary-button-background-color: #f83c29;
   --secondary-button-background-color-hover: #b83020;
   --low-weight-color: #ffc107;

@@ -5,7 +5,7 @@ import styles from "./Button.module.css";
 interface IButtonProps {
   children: ReactNode;
   isFullWidth?: boolean;
-  theme: string;
+  theme?: string;
   className?: string;
 }
 

@@ -1,0 +1,45 @@
+.controls {
+  max-width: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  gap: 20px;
+}
+
+.buttonContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.controls svg {
+  width: 80px;
+  height: 80px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 20px;
+  border-radius: 18px;
+  background-image: linear-gradient(
+    117deg,
+    var(--main-button-background-color-start),
+    var(--main-button-background-color-end)
+  );
+  border: 1px solid var(--main-button-background-color-start);
+}
+
+.button:active {
+  background-image: linear-gradient(
+    117deg,
+    var(--main-button-background-color-active-start),
+    var(--main-button-background-color-active-end)
+  );
+  border: 1px solid var(--main-button-background-color-active-start);
+}
